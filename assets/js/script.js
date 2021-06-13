@@ -1,6 +1,20 @@
 var saveBtns = document.querySelectorAll("button")
 var workTasks = document.querySelectorAll(".description")
 
+var time = function(){
+    for (i=0; i < workTasks.length; i++) {
+        if (moment().format("HH") < workTasks[i].id) {
+            workTasks[i].setAttribute("class", "description col-10 future")
+        } else if (moment().format("HH") === workTasks[i].id) {
+            workTasks[i].setAttribute("class", "present col-10 description")
+        } else if (moment().format("HH") > workTasks[i].id) {
+            workTasks[i].setAttribute("class", "past col-10 description")
+        }
+    }
+}
+
+time()
+
 $(saveBtns[0]).on("click", function() {
     console.log(workTasks[0].value)
     localStorage.setItem("schedule1", JSON.stringify(workTasks[0].value))
