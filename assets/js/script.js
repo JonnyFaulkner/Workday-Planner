@@ -1,5 +1,12 @@
 var saveBtns = document.querySelectorAll("button")
 var workTasks = document.querySelectorAll(".description")
+var dateEl = document.querySelector(".lead")
+
+var currentDate = function() {
+    dateEl.textContent = moment().format("dddd, MMMM Do YYYY")
+}
+
+currentDate()
 
 var time = function(){
     for (i=0; i < workTasks.length; i++) {
