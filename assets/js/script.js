@@ -23,47 +23,38 @@ var time = function(){
 time()
 
 $(saveBtns[0]).on("click", function() {
-    console.log(workTasks[0].value)
     localStorage.setItem("schedule1", JSON.stringify(workTasks[0].value))
 })
 
 $(saveBtns[1]).on("click", function() {
-    console.log(workTasks[1].value)
     localStorage.setItem("schedule2", JSON.stringify(workTasks[1].value))
 })
 
 $(saveBtns[2]).on("click", function() {
-    console.log(workTasks[2].value)
     localStorage.setItem("schedule3", JSON.stringify(workTasks[2].value))
 })
 
 $(saveBtns[3]).on("click", function() {
-    console.log(workTasks[3].value)
     localStorage.setItem("schedule4", JSON.stringify(workTasks[3].value))
 })
 
 $(saveBtns[4]).on("click", function() {
-    console.log(workTasks[4].value)
     localStorage.setItem("schedule5", JSON.stringify(workTasks[4].value))
 })
 
 $(saveBtns[5]).on("click", function() {
-    console.log(workTasks[5].value)
     localStorage.setItem("schedule6", JSON.stringify(workTasks[5].value))
 })
 
 $(saveBtns[6]).on("click", function() {
-    console.log(workTasks[6].value)
     localStorage.setItem("schedule7", JSON.stringify(workTasks[6].value))
 })
 
 $(saveBtns[7]).on("click", function() {
-    console.log(workTasks[7].value)
     localStorage.setItem("schedule8", JSON.stringify(workTasks[7].value))
 })
 
 $(saveBtns[8]).on("click", function() {
-    console.log(workTasks[8].value)
     localStorage.setItem("schedule9", JSON.stringify(workTasks[8].value))
 })
 
